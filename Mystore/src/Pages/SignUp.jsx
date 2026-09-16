@@ -37,7 +37,7 @@ const SignUp = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3000/signup",
+        `${import.meta.env.VITE_BASE_URL}/signup`,
         user
       );
 
